@@ -1,8 +1,11 @@
 console.log("Javascript File Loaded");
-
 var items = new Array();
 var container = document.getElementById("item-container");
-var xDiff, yDiff;
+//var xDiff, yDiff;
+
+var dragContainer = new DragAndDrop(container);
+
+/*
 container.onmousedown = function(){
     xDiff = parseFloat(getComputedStyle(container).left) - parseFloat(event.pageX);
     yDiff = parseFloat(getComputedStyle(container).top) - parseFloat(event.pageY);
@@ -19,6 +22,8 @@ function attachContainer(event){
     container.style.left = (mouseX + xDiff).toString() + "px";
     container.style.top = (mouseY + yDiff).toString() + "px";
 }
+
+*/
 
 function printMouseChoord(event){
     console.log(event.pageX + " " + event.pageY);
