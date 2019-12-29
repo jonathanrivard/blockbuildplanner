@@ -1,4 +1,4 @@
-console.log("Drag and Drop Module Loaded");
+console.log("Dragable Module Loaded");
 
 //Drag and Drop Class
 //Created by Jonathan Rivard
@@ -6,7 +6,7 @@ console.log("Drag and Drop Module Loaded");
 // 11/28/19
 //By creating this class and passing in a item, that item will become drag and drop
 
-class DragAndDrop {
+class Dragable {
     constructor(item){
         item.style.position = "absolute"; //Set item's position to absolute
         

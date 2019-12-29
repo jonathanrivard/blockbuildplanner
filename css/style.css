@@ -1,14 +1,48 @@
-#item-container {
+#main-container {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: black;
+    width: auto;
+    height: auto;
+    background-color: gray;
 }
 
-#test {
-    position: absolute;
-    left: 200px;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+#main-container #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-container #header h1 {
+
+}
+
+#main-container #header #levels {
+
+}
+
+#main-container #header #settings {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-container #header #settings input{
+    width: 30%;
+    margin: 0rem 2rem;
+    text-align: center;
+}
+
+#main-container #item-container {
+    width: auto;
+    height: auto;
+    background-color: gray;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+#main-container #item-container .item {
+    background-color: lightgray;
+    width: 5rem;
+    height: 5rem;
 }

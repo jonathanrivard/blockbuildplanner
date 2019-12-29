@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="item-container"></div>
-    <div id="test"></div>
+    <div id="main-container">
+        <div id="header">
+            <h1>Block Building Planner</h1>
+            <div id="levels"></div>
+            <div id="settings">
+                <input type="text" placeholder="width" id="widthInput" onchange="refreshItemContainer()">
+                <p>by</p>
+                <input type="text" placeholder="height" id="heightInput" onchange="refreshItemContainer()">
+            </div>
+        </div>
+        <div id="item-container"></div>
+    </div>
 </body>
-<script src="./js/DragAndDrop.js"></script>
+<script src="./js/Dragable.js"></script>
+<script src="./js/Zoomable.js"></script>
 <script src="./js/main.js"></script>
 </html>
